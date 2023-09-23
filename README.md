@@ -1,27 +1,70 @@
-# React + TypeScript + Vite
+# Pokédex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+<img src="public/pokeball.png" alt="Pokéball">
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+A simple Pokédex web app built using React & Tailwind CSS
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
+<a href="https://pokedex.irfannm.dev">Live demo!</a>
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<img src="docs/pokedex-web.png" alt="Pokédex Web">
+<div align="center">
+<img src="docs/pokedex-mobile.png" alt="Pokédex Mobile" height="500">
+</div>
 
-- Configure the top-level `parserOptions` property like this:
+### Features
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+1. List of 150 Pokémon with infinite scrolling
+2. Filter Pokémons by their type
+3. Display Pokémon details
+4. Catch Pokémon to local account 
+
+### Run Locally
+### Prerequisites
+
+1. NodeJS & npm installed in your machine
+2. Git
+
+### Steps
+1. Clone the project
+
+```bash
+  git clone https://github.com/irfan44/pokemon
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Go to the project directory
+
+```bash
+  cd pokemon
+```
+
+3. Install dependencies
+
+```bash
+  npm install
+```
+
+4. Start the development server
+
+```bash
+  npm run dev
+```
+
+5. Open http://localhost:5173 with your browser to see the result.
+
+### Built With
+
+1. [Vite](https://vite.dev/) using React template to initialize the project.
+2. Written in [Typescript](https://www.typescriptlang.org/)
+3. [Tailwind CSS](https://tailwindcss.com/) for building UI
+4. [Apollo Client](https://www.apollographql.com/docs/react/) for handling GraphQL request 
+5. [React Router](https://reactrouter.com/) for routing 
+6. Deployed on [Vercel](https://vercel.com/)
+
