@@ -19,7 +19,7 @@ const PokemonDetailCard = ({ data }: PokemonDetailCardProps) => {
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-3xl font-bold">{data?.name}</h2>
-            <p className="text-gray-700">{data?.classification}</p>
+            <p className="text-gray-600">{data?.classification}</p>
           </div>
           <div>
             <CatchPokemon data={data} />
