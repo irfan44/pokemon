@@ -38,7 +38,7 @@ const MyPokemonCard = ({
         alt={data.name}
       />
       <div className="mt-4">
-        <p className="text-sm text-gray-400">#{index + 1}</p>
+        <p className="text-sm text-gray-600">#{index + 1}</p>
         <h3 className="font-bold">{data.nickname}</h3>
         <p className="text-gray-700">{data.name}</p>
         <div className="flex mt-2 space-x-2">

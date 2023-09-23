@@ -19,7 +19,7 @@ const PokemonCard = ({ data, index }: PokemonCardProps) => {
         alt={data.name}
       />
       <div className="mt-4 space-y-1">
-        <p className="text-sm text-gray-400">#{index}</p>
+        <p className="text-sm text-gray-600">#{index}</p>
         <h3 className="font-bold">{data.name}</h3>
         <div className="flex space-x-2">
           {data.types.map((type) => {
