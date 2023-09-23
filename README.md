@@ -17,6 +17,7 @@ A simple Pokédex web app built using React & Tailwind CSS
 <img src="docs/pokedex-web.png" alt="Pokédex Web">
 <div align="center">
 <img src="docs/pokedex-mobile.png" alt="Pokédex Mobile" height="500">
+<img src="docs/pokedex-mobile-mypokemon.png" alt="Pokédex Mobile" height="500" style="margin-left: 8px">
 </div>
 
 ### Features
