@@ -1,32 +1,33 @@
-import { PokemonData } from "../types/pokemon.ts";
+import { Link } from "react-router-dom";
+import { BasicPokemonData } from "../../models/pokemon.ts";
+import ListCard from "../commons/ListCard.tsx";
 
 type PokemonCardProps = {
-  data: PokemonData;
+  data: BasicPokemonData;
   index: number;
 };
 
 const PokemonCard = ({ data, index }: PokemonCardProps) => {
   return (
-    <div className="flex flex-col border rounded-xl p-6 shadow">
+    <Link
+      to={`/pokemon/${data.name.toLowerCase()}`}
+      className="flex flex-col border rounded-xl p-6 shadow hover:shadow-lg"
+    >
       <img
         className="h-52 w-auto object-contain"
         src={data.image}
         alt={data.name}
       />
       <div className="mt-4 space-y-1">
-        <p>#{index}</p>
+        <p className="text-sm text-gray-400">#{index}</p>
         <h3 className="font-bold">{data.name}</h3>
         <div className="flex space-x-2">
           {data.types.map((type) => {
-            return (
-              <div className="px-2 py-1 border rounded-lg font-medium">
-                {type}
-              </div>
-            );
+            return <ListCard key={type}>{type}</ListCard>;
           })}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

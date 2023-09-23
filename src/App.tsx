@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PageLayout from "./components/layouts/PageLayout.tsx";
+import Details from "./pages/Details.tsx";
 import Home from "./pages/Home.tsx";
-import PageLayout from "./components/PageLayout.tsx";
+import MyPokemon from "./pages/MyPokemon.tsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -9,6 +11,22 @@ function App() {
       element: (
         <PageLayout>
           <Home />
+        </PageLayout>
+      ),
+    },
+    {
+      path: "/pokemon/:name",
+      element: (
+        <PageLayout>
+          <Details />
+        </PageLayout>
+      ),
+    },
+    {
+      path: "/my-pokemon",
+      element: (
+        <PageLayout>
+          <MyPokemon />
         </PageLayout>
       ),
     },
