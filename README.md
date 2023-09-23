@@ -68,3 +68,4 @@ A simple Pokédex web app built using React & Tailwind CSS
 5. [React Router](https://reactrouter.com/) for routing 
 6. Deployed on [Vercel](https://vercel.com/)
 
+© 2023 Pokémon. © 1995–2023 Nintendo/Creatures Inc./GAME FREAK inc. Pokémon, Pokémon character names, Nintendo Switch, Nintendo 3DS, Nintendo DS, Wii, Wii U, and WiiWare are trademarks of Nintendo.
