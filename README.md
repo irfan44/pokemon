@@ -62,7 +62,7 @@ A simple Pokédex web app built using React & Tailwind CSS
 
 ### Built With
 
-1. [Vite](https://vite.dev/) using React template to initialize the project.
+1. [Vite](https://vitejs.dev/) using React template to initialize the project.
 2. Written in [Typescript](https://www.typescriptlang.org/)
 3. [Tailwind CSS](https://tailwindcss.com/) for building UI
 4. [Apollo Client](https://www.apollographql.com/docs/react/) for handling GraphQL request 
