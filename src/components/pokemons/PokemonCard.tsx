@@ -20,7 +20,7 @@ const PokemonCard = ({ data, index }: PokemonCardProps) => {
       />
       <div className="mt-4 space-y-1">
         <p className="text-sm text-gray-600">#{index}</p>
-        <h3 className="font-bold">{data.name}</h3>
+        <h2 className="font-bold">{data.name}</h2>
         <div className="flex space-x-2">
           {data.types.map((type) => {
             return <ListCard key={type}>{type}</ListCard>;

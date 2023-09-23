@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { PokemonData } from "../../models/pokemon.ts";
 import ListCard from "../commons/ListCard.tsx";
 import CatchPokemon from "./CatchPokemon.tsx";
+import EvolutionCard from "./EvolutionCard.tsx";
 
 type PokemonDetailCardProps = {
   data: PokemonData | undefined;
@@ -43,20 +43,7 @@ const PokemonDetailCard = ({ data }: PokemonDetailCardProps) => {
             <h3 className="mt-4 mb-2 text-xl font-bold">Evolutions</h3>
             <div className="flex space-x-2">
               {data?.evolutions.map((evolution) => {
-                return (
-                  <Link
-                    to={`/pokemon/${evolution.name}`}
-                    key={evolution.id}
-                    className="border rounded-xl p-2 hover:shadow"
-                  >
-                    <img
-                      className="h-24 w-24 object-contain"
-                      src={evolution.image}
-                      alt={evolution.name}
-                    />
-                    <h4 className="font-medium">{evolution.name}</h4>
-                  </Link>
-                );
+                return <EvolutionCard data={evolution} />;
               })}
             </div>
           </div>

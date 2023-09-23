@@ -8,7 +8,7 @@ type AttributeCardProps = {
 const AttributeCard = ({ title, attribute }: AttributeCardProps) => {
   return (
     <div className="border p-4 rounded-xl">
-      <p className="font-bold">{title}</p>
+      <h3 className="font-bold">{title}</h3>
       <div className="flex flex-wrap gap-2 mt-2">
         {attribute?.map((value) => {
           return <ListCard key={value}>{value}</ListCard>;
